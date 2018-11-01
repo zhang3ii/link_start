@@ -1,0 +1,177 @@
+/*统一设置页面样式*/
+body{
+	margin: 0px;
+	font : 12px "Microsoft Yahei","黑体",span-serif;
+	color: #9a9a9a;
+
+}
+/*清除默认样式*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+
+}
+
+a{
+	color: #9a9a9a;
+	text-decoration: none;
+}
+a:hover{
+	color: #64a131
+}
+img{
+	vertical-align: bottom ;
+	border: 0px;
+}
+
+/*页面整体宽度设置及居中效果*/
+#container{
+	width: 990px;
+	margin: 0 auto;
+}
+/*1.导航*/
+#nav{
+	height: 30px;
+	background: #eee;
+	line-height: 30px;
+}
+/*Y右侧导航*/
+#nav .rightNav{
+	float: right;
+}
+#nav .rightNav>li{
+	float: left;
+	padding: 0 5px;
+}
+#nav .rightNav>li>b{
+	border-right: 1px solid #9a9a9a;
+	height: 18px;
+	margin-right: 10px;
+}
+
+/*左侧导航*/
+#nav .leftNav>li{
+	float: left;
+	padding-left:10px;
+}
+#nav .leftNav>li>u{
+	display: inline-block;
+	width: 0px;
+	height: 0px;
+	border: 6px solid transparent;
+	border-top:6px solid #999999;
+	position: relative;
+	top: 4px;
+}
+#nav .address{
+	position: relative;
+}
+.select{
+	display: none;
+	position: absolute;
+	z-index: 100;
+	color: black;
+
+}
+#nav .address:hover .select{
+	display: block;
+}
+/*横幅*/
+#banner{
+	margin: 15px 0;
+	position: relative;
+}
+#banner img{
+	width: 100%;
+	height:207px;
+	transition: all 5s;
+}
+
+#banner img:not(:first-child){
+	display: none;
+}
+/*图片索引*/
+#banner .imgNav{
+	position: absolute;
+	right: 20px;
+	bottom: 10px;
+}
+#banner .imgNav>li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 0 10px;
+	background: grey;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50px;
+
+}
+#banner .imgNav>li:first-child{
+	background: gold;
+}
+
+
+#adv img{
+	float: left;
+	margin-right: 10px;
+	width: 240px;
+}
+#adv #lastimg{
+	margin-right: 0px;
+}
+#adv{
+	height: 120px;
+}
+
+/*主体信息*/
+#main{
+	margin-top: 25px;
+	border-top: 1px #9a9a9a solid;
+	padding-top:15px;
+	overflow: hidden;
+}
+#main .goodsClass>a{
+	float: right;
+	color: #333;
+}
+#main .item>ul>li{
+	width: 190px;
+	margin-right: 10px;
+	float: left;
+
+}
+#main .item>ul>li.no-margin{
+	margin-right: 0px;
+}
+
+#main .item>ul>li>p{
+	width: 190px;
+	height: 190px;
+	overflow: hidden;
+}
+#main .item>ul>li>p>img{
+	width: 190px;
+	transition: all .5s;
+}
+#main .item>ul>li>p>img:hover{
+	transform: scale(1.2);
+}
+
+#main .content>a{
+	float:right;
+}
+
+#main .content{
+	margin-top: 5px;
+}
+#main .content>p{
+	color: #555;
+	margin-bottom: 3px;
+	margin-left: 3px;
+}
+
+#main .content>span{
+	margin-left: 5px;
+}
